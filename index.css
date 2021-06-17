@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    height: 100vh;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr 1.5fr;
+    grid-template-rows: 1fr 4fr 3fr 2fr;
+    grid-template-areas: "main main header" "main main candy" "nom yum candy" "munch munch candy";
+    height: 100vh;
+    margin: 2em;
+}
+
+main {
+    grid-area: main;
+    background: #fffadf;
+}
+
+section.nom {
+    grid-area: nom;
+    background: #c4b35a;
+}
+
+section.yum {
+    grid-area: yum;
+    background: #333333;
+}
+
+section.munch {
+    grid-area: munch;
+    background: #202020;
+}
+
+header {
+    grid-area: header;
+    background: #dfb5b5;
+}
+
+.candy {
+    grid-area: candy;
+    background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/2621168/candy.jpg') no-repeat;
+    background-size: cover;
+}
